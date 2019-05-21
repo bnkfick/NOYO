@@ -6,7 +6,7 @@ NoYo Events - Event Planning Website in German and English for NoYo Events clien
 
 ### Screenshot
 <a href="http://noyoevents.com/">
-<img src="https://raw.githubusercontent.com/bnkfick/NOYO/master/assets/images/NoYoResponsive.png" alt="NoYo Events">
+<img src="https://raw.githubusercontent.com/bnkfick/NOYO/master/assets/images/NoYo-Responsive.png" alt="NoYo Events">
 </a>
 
 
