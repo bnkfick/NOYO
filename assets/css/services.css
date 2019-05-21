@@ -1,0 +1,262 @@
+
+.picture {
+  /* background-image: url('../images/Stephanie.png'); */
+  /* you need to match the shadow color to your background or image border for the desired effect*/
+  /* box-shadow: 0 0 8px 8px white inset; */
+  width: 280px;
+  height: 280px;
+  margin: 40px 20px 0;
+  text-align: center;
+  background-color: transparent;
+  box-shadow: -50px -50px #f6efea;
+  /* border: 20px solid rgba(255, 255, 255, 0.3); */
+}
+
+#parties {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 2.5em;
+  text-align: left;
+  background-color: transparent;
+  color: #333;
+  padding-top: 2em;
+  margin: 0 5px 40px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  width: 300px;
+  min-height: 500px;
+}
+
+#fullservice { 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.75em;
+    text-align: left;
+    background-color: transparent;
+    color: #333;
+    padding-top: 2em;
+    margin: 40px 5px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 300px;
+    min-height: 1300px;
+}
+#dayof { 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.75em;
+    text-align: left;
+    background-color: transparent;
+    color: #333;
+    padding-top: 2em;
+    margin: 40px 5px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 300px;
+    min-height: 1100px;
+}
+#quote {
+  background-color: transparent;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  height: 130px;
+  margin: 20px 10px 0;
+  text-align: center;
+}
+
+/* MEDIA QUIERIES
+  ------------------------------------------------------------------------------*/
+@media screen and (min-width: 375px) {
+  .main-wrapper {
+    max-width: 370px;
+  }
+
+  .picture {
+    margin: 60px 50px 10px;
+  }
+  #quote {
+    margin: 0 40px 0;
+    width: 300px;
+  }
+  #fullservice { 
+    padding-top: 2em;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    width:  330px;
+    min-height: 1250px;
+  }
+
+  #dayof { 
+    padding-top: 2em;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    width:  330px;
+    min-height: 1100px;
+  }
+  #parties {
+    width: 350px;
+    min-height: 400px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .main-wrapper {
+    max-width: 500px;
+    /* border: 1px solid pink; */
+  }
+
+  .picture {
+    margin: 60px 70px 10px;
+  }
+  #quote {
+    margin: 0 70px 0;
+  }
+  #fullservice, #dayof { 
+    width: 400px;
+  }
+  #parties {
+    padding-top: 2em;
+    border-top: 1px solid gray;
+    width: 400px;
+    min-height: 400px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .main-wrapper {
+    max-width: 600px;
+    /* border: 1px solid pink; */
+  }
+  #content {
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+  }
+
+  .square.double {
+    margin: 0.625em 0.625em;
+    width: 500px;
+    height: 300px;
+    text-align: left;
+    /* border: 20px solid rgba(255, 255, 255, 0.3); */
+  }
+
+  .picture {
+    width: 400px;
+    height: 300px;
+  }
+  #portrait {
+    margin: 70px 100px 10px;
+  }
+
+  #quote {
+    margin: 10px 100px 0;
+    height: 130px;
+    width: 400px;
+  }
+  #parties {
+    padding-top: 2em;
+    margin-top: 0;
+    margin-left: 3em;
+    margin-right: 1em;
+    width: 500px;
+    min-height: 300px;
+  }
+  #fullservice { 
+    padding-top: 2em;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    width:  550px;
+    min-height: 1100px;
+  }
+  #dayof { 
+    padding-top: 2em;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    width:  550px;
+    min-height: 900px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .main-wrapper {
+    max-width: 800px;
+    /* border: 1px solid pink; */
+  }
+  #parties {
+    padding-top: 2em;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 750px;
+    min-height: 50px;
+  }
+  #fullservice { 
+    padding-top: 2em;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 750px;
+    min-height: 920px;
+  }
+  #dayof { 
+    padding-top: 2em;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    width:  750px;
+    min-height: 750px;
+  }
+
+  #quote {
+    margin: 0 100px 20px;
+    height: 130px;
+  }
+  .picture {
+    margin: 90px 0 10px 110px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .main-wrapper {
+    max-width: 1000px;
+  }
+
+  #fullservice, #dayof, #parties  {
+    width: 900px;
+    margin-left: 50px;
+  }
+  #fullservice {
+    min-height: 800px;
+  }
+  #dayof {
+    min-height: 600px;
+  }
+  #parties.square.triple {
+    height: 200px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #f6efea;
+  }
+  #quote {
+    margin: 150px 0 0;
+    line-height: 2em;
+    height: 280px;
+    width: 350px;
+  }
+}
+.NoYo {
+  color: red;
+  letter-spacing: 0.25em;
+}
+
+ .NoYo.subtitle {
+     font-size: 1em;
+     font-family: 'Montserrat', sans-serif;
+     text-transform: uppercase;
+
+ }

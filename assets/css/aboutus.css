@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  color: #fff;
+  /* background-image: url("../images/yellow-flowers.jpg"); */
+}
+
+#backdrop {
+  content: " ";
+  width: 280px;
+  height: 280px;
+  margin: 40px 20px 0;
+  position: absolute;
+  top: -5px;
+  left: -20px;
+  /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+  background: #f6efea;
+}
+#portrait {
+  /* background-image: url('../images/Stephanie.png'); */
+  /* you need to match the shadow color to your background or image border for the desired effect*/
+  /* box-shadow: 0 0 8px 8px white inset; */
+  width: 280px;
+  height: 280px;
+  margin: 40px 20px 0;
+  text-align: center;
+  background-color: transparent;
+  /* border: 20px solid rgba(255, 255, 255, 0.3); */
+}
+
+#about {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 2.5em;
+  text-align: left;
+  background-color: transparent;
+  color: #333;
+  padding-top: 2em;
+  margin: 0 5px 40px;
+  border-top: 1px solid gray;
+  width: 300px;
+  min-height: 800px;
+}
+
+#quote {
+  background-color: transparent;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  font-style: italic;
+  line-height: 1.5em;
+  height: 200px;
+  margin: 20px 10px 0;
+  text-align: center;
+}
+
+/* MEDIA QUIERIES
+------------------------------------------------------------------------------*/
+@media screen and (min-width: 375px) {
+  .main-wrapper {
+    max-width: 370px;
+  }
+  #backdrop {
+    margin: 60px 50px 10px;
+  }
+  #portrait {
+    margin: 60px 50px 10px;
+  }
+  #quote {
+    margin: 0 40px 0;
+    width: 300px;
+  }
+  #about {
+    width: 350px;
+    min-height: 500px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .main-wrapper {
+    max-width: 500px;
+    /* border: 1px solid pink; */
+  }
+  #backdrop {
+    margin: 60px 70px 10px;
+    top: -20px;
+    left: -40px;
+  }
+  #portrait {
+    margin: 60px 70px 10px;
+  }
+  #quote {
+    margin: 0 70px 0;
+  }
+  #about {
+    padding-top: 2em;
+    border-top: 1px solid gray;
+    width: 400px;
+    min-height: 500px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .main-wrapper {
+    max-width: 600px;
+    /* border: 1px solid pink; */
+  }
+  #content {
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+  }
+
+  .square.double {
+    margin: 0.625em 0.625em;
+    width: 500px;
+    height: 300px;
+    text-align: left;
+    /* border: 20px solid rgba(255, 255, 255, 0.3); */
+  }
+
+  #portrait,
+  #backdrop {
+    width: 400px;
+    height: 300px;
+  }
+  #portrait {
+    margin: 70px 100px 10px;
+  }
+  #backdrop {
+    margin: 70px 100px 10px;
+  }
+  #quote {
+    margin: 10px 100px 0;
+    width: 400px;
+  }
+  #about {
+    padding-top: 2em;
+    margin-top: 0;
+    margin-left: 3em;
+    margin-right: 1em;
+    width: 500px;
+    min-height: 500px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .main-wrapper {
+    max-width: 800px;
+    /* border: 1px solid pink; */
+  }
+  #about {
+    width: 700px;
+    min-height: 400px;
+  }
+  #quote {
+    margin: 0 100px 20px;
+  }
+  #portrait {
+    margin: 90px 0 10px 110px;
+  }
+  #backdrop {
+    margin: 70px 50px 60px 110px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .main-wrapper {
+    max-width: 1000px;
+  }
+  #about {
+    width: 900px;
+    min-height: 300px;
+  }
+  #quote {
+    margin: 150px 0 0;
+    line-height: 2em;
+    height: 280px;
+    width: 350px;
+  }
+}
