@@ -335,8 +335,14 @@ hr {
     display: flex;
     padding: 0;
     border-bottom: 1px solid rgba(176, 176, 176, 0.5); }
+    .nav-list > .list > .locale {
+      position: absolute;
+      right: 15px;
+      top: -15px;
+     }
     .nav-list > .list > .item:last-child {
       border-bottom: 0; }
+
   .nav-list > .list > .item > .link {
     border-color: transparent;
     padding: 0.75rem 1rem 0.5rem 1rem;

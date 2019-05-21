@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NoYo Events - Celebration Planner</title>
+    <meta property="og:title" content="Simply Navigation" />
+    <meta name="description" property="og:description"
+        content="A simple navigation component built using vanilla JS &amp; Flexbox." />
+    <meta property="og:url" content="https://github.com/obscuredetour/simply-nav/index.html" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/obscuredetour/simply-nav/master/assets/images/logo-full-dark.svg" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,300italic,600,700,800"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/aboutus.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+
+<body>
+    <!-- Navigation / nav-wrapper component -->
+    <header class="nav-wrapper">
+        <nav class="nav">
+            <button class="toggle-nav" type="button">
+                <div class="burger -squeeze" type="button">
+                    <span class="burger-lines"></span>
+                </div>
+            </button>
+            <a class="logo-link" href="index">
+                <div class="logo">NoYo</div>
+            </a>
+            <ul class="nav-list" role="navigation">
+                <div class="list -left">
+                    <li class="item">
+                        <a class="link" href="aboutus">About Us</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="services">What We Do</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="gallery">Gallery</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="press">Press</a>
+                    </li>
+                </div>
+                <div class="list -right">
+                    <div class="overlay"></div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bg-image"></div>
+    <div class="main-wrapper">
+        <div id="content">
+            <div id="backdrop"></div>
+            <div class="square" id="portrait">
+                <img src="assets/images/Stephanie.png">
+            </div>
+            <div class="square" id="quote">
+                <span class="NoYo" style="font-size: 3rem; color: #333; padding:0">S</span>tephanie brings her passion
+                to the table.<button id="myBtn" class="contact">CONTACT US</button>
+            </div>
+            <div class="square double" id="about">
+                <span class="NoYo" style="letter-spacing: .5em;">NoYo</span> is headed by Stephanie Mages. A native of
+                New York City, Stephanie brings passion to the table. Her commitment to innovate and to create new and
+                unique experiences and celebrations suits events of any type. For many years, Stephanie worked for a
+                premier catering company in New York City. Her experience ranges from planning corporate galas for
+                thousands, to intimate parties for family and friends. She eventually found a specialty in wedding
+                planning and currently lives in Abensberg with her young family. Stephanie now brings her New York
+                sensibilities to Germany and to all of the special events she plans.
+                
+            </div>
+
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+                <span class="NoYo">NOYO</span> <br/>
+                Contact us today.
+                <br />
+                STEPHANIE MAGES
+                <br /> <br />
+                <a href="tel:+49 9443/3591">+49 9443/3591</a>
+                <br /> <br />
+                Bahnhofstr. 14B <br />
+                93326 Abensberg <br />
+                <br />
+                
+
+                mobile: <a href="tel:+49 0160 9821 8084">+49 0160 9821 8084</a>
+                <br />
+                <a href="mailto:smages@noyoevents.com">smages@noyoevents.com</a>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p class="poweredby">&copy;
+            <script>document.write(new Date().getFullYear())</script> Barbara Fick. All Rights Reserved.
+        </p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    </script>
+
+    <script src="assets/js/simply-nav.js"></script>
+    <script src='assets/js/masonry.pkgd.min.js'></script>
+    <script src="assets/js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var container = document.querySelector('#content');
+            var msnry = new Masonry(container, {
+                columnWidth: 50,
+                itemSelector: '.square',
+                isFitWidth: true
+            });
+            // Initialize the slider
+            $('.slider').bxSlider();
+        })
+
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
